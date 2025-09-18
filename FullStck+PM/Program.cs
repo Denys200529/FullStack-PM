@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 class Program
 {
-    // Твій ключ API
+    
     static readonly string apiKey = "AIzaSyBSWTwcy_EBWAF8kPcSYF4fRa2u3Gr6zDk";
     static readonly string dbFile = "youtube_db.json";
 
@@ -16,7 +16,7 @@ class Program
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         bool running = true;
 
-        Console.WriteLine("=== YouTube Search App ===");
+        Console.WriteLine("=== YouTube Search App ===");s
 
         while (running)
         {
@@ -65,7 +65,6 @@ class Program
                 });
             }
 
-            // Вивід результатів
             Console.WriteLine("\n=== Результати пошуку ===");
             foreach (var v in videos)
             {
@@ -76,7 +75,7 @@ class Program
                 Console.WriteLine(new string('-', 50));
             }
 
-            // Збереження в локальну "БД" (JSON)
+           
             var record = new YoutubeRecord
             {
                 Query = query,
